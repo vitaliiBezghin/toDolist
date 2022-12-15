@@ -1,0 +1,8 @@
+@mixin task-action-mixin($color, $background) {
+    padding: 5px;
+    background: $background;
+    color: $color;
+    margin: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}

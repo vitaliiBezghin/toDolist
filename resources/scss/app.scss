@@ -1,0 +1,23 @@
+@import "mixins/mainMixin";
+
+.box{
+    max-width: 800px;
+    border: 1px solid #d7d3d3;
+    box-shadow: 0px 0px 4px 1px #d7d3d3;
+    margin: 20px auto;
+    padding: 7px;
+    box-sizing: border-box;
+    .title{
+        text-align: center;
+    }
+}
+.done {
+    text-decoration: line-through;
+}
+.mark-as-done-btn{
+    @include task-action-mixin( #fff, lightgreen);
+}
+.delete-task-btn {
+    @include task-action-mixin( #fff, #ca2222);
+
+}
